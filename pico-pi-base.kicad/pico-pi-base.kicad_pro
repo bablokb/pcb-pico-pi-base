@@ -56,8 +56,7 @@
         }
       ],
       "drc_exclusions": [
-        "courtyards_overlap|106000001|94968646|640aa317-cc8e-48cd-97e9-6e14b55e2913|7e8d827e-a7ed-44d4-95fc-a91af7cef820",
-        "silk_overlap|108109940|53493129|379f3553-7a11-436c-afac-f8816b4daa3c|ebce3c2f-80a2-46ae-b1ad-705fbf43b1da"
+        "courtyards_overlap|106000001|94968646|640aa317-cc8e-48cd-97e9-6e14b55e2913|7e8d827e-a7ed-44d4-95fc-a91af7cef820"
       ],
       "meta": {
         "version": 2
@@ -89,7 +88,7 @@
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_over_copper": "ignore",
-        "silk_overlap": "error",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
@@ -347,7 +346,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "pico-pi-base-single.kicad_pro",
+    "filename": "pico-pi-base.kicad_pro",
     "version": 1
   },
   "net_settings": {

@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 37,
+    "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_nets": [],
@@ -63,7 +63,7 @@
     "zone_display_mode": 1
   },
   "meta": {
-    "filename": "pico-pi-base-single.kicad_prl",
+    "filename": "pico-pi-base.kicad_prl",
     "version": 3
   },
   "project": {
