@@ -20,4 +20,4 @@ work
 TODO
 
 boot_out.txt
-lib
+examples/*/lib
