@@ -1,5 +1,6 @@
 # SPDX-FileCopyrightText: 2022 Kattni Rembor for Adafruit Industries
 # SPDX-License-Identifier: MIT
+# from: http://github.com/adafruit/Adafruit_CircuitPython_HT16K33
 
 import time
 import board
