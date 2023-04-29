@@ -25,3 +25,19 @@ The driver for the pHat and the CAP1166 chip were ported from the
 Linux-version supplied by Pimoroni.
 
 
+4-Letter pHat
+-------------
+
+A 4x14 segment display pHat <https://shop.pimoroni.com/products/four-letter-phat>.
+
+Works out of the box with <http://github.com/adafruit/Adafruit_CircuitPython_HT16K33>.
+
+
+LED-Shim
+--------
+
+Also from Pimoroni <https://shop.pimoroni.com/products/led-shim>.
+
+Same driver as the scroll pHat: <http://github.com/adafruit/Adafruit_CircuitPython_IS31FL3731>. The example is from that repo too.
+
+
