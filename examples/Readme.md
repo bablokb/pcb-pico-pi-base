@@ -41,3 +41,14 @@ Also from Pimoroni <https://shop.pimoroni.com/products/led-shim>.
 Same driver as the scroll pHat: <http://github.com/adafruit/Adafruit_CircuitPython_IS31FL3731>. The example is from that repo too.
 
 
+Pirate-Audio Speaker-Hat
+------------------------
+
+A hat from Pimoroni with a 240x240 display, four buttons, an audio DAC and
+a small speaker (https://shop.pimoroni.com/products/pirate-audio-mini-speaker).
+
+There are a few variants of this head available and all should work the same.
+
+Currently with Rev1-boards, only the display and the buttons are supported.
+Rev2-boards will also (hopefully) support audio.
+
