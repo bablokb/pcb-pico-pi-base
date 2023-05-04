@@ -12,6 +12,25 @@ and the "pico-pi-base":
 ![](pico-pi-base.jpg)
 
 
+Currently, the boards support (besides digital IO) I2C and SPI.
+Support for I2S (sound) will be available with the Rev2-boards.
+
+
+Supported Hats
+--------------
+
+The following hats were successfully tested:
+
+  - Scroll pHat HD
+  - Touch pHat
+  - 4-Letter pHat
+  - LED-Shim
+  - Pirate-Audio Speaker-Hat (except audio)
+  - Display-Otron-Hat
+
+See the [examples page](examples/Readme.md) for details.
+
+
 Hardware
 --------
 
@@ -43,9 +62,10 @@ Software
 
 Since you cannot run Linux-software on the Pico, you need to check if there is a
 Pico-driver available for your hats or adapt existing Pi drivers to the Pico. Since
-many hats have python-drivers, this is not too difficult. Most hats use I2C and/or SPI.
+many hats have python-drivers, this is not too difficult. Most hats only use
+I2C and/or SPI anyhow.
 
-*work in progress*
+*Work in progress:*
 
   - special CircuitPython builds with pin-aliases mapping the GPIOs of the Pi to the Pico
   - CircuitPython drivers for various hats

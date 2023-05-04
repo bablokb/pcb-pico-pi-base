@@ -52,3 +52,13 @@ There are a few variants of this head available and all should work the same.
 Currently with Rev1-boards, only the display and the buttons are supported.
 Rev2-boards will also (hopefully) support audio.
 
+
+Display-Otron-Hat
+-----------------
+
+From Pimoroni: <https://shop.pimoroni.com/products/display-o-tron-hat>.
+
+The hat has a 3x16 character LCD with RGB backlight, six bar-graph
+LEDs and six touch-buttons.
+
+Fully supported, but the examples need some minor tweaks.
