@@ -40,7 +40,7 @@ respectively. Ready to upload production files for JLCPCB are in `production_fil
 Except for I2C-pullups (and VSYS-diode on pico-pi-base) the adapter-boards
 only map the pins of the Pico to pins of the Pi. The current version only
 supports I2C, SPI0 and SPI1. I2S will be supported by the next version of
-pico-pi-base. The smaller board won't support I2S due to space limitations.
+pico-pi-base.
 
 Schematic, layout and 3D-rendered images for pico-zero-base:
 
