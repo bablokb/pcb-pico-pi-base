@@ -337,6 +337,10 @@ class Cap1xxx():
                 return False
             time.sleep(0.005)
 
+    def on(self, channel=0, event='press', handler=None):
+        self.handlers[event][channel] = handler
+        return True
+
     def set_touch_delta(self, delta):
         self._delta = delta
 
