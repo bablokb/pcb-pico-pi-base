@@ -21,3 +21,7 @@ TODO
 
 boot_out.txt
 examples/*/lib
+work
+*.pyc
+*secrets.py
+__pycache__
