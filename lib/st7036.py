@@ -7,6 +7,7 @@ import time
 
 import board
 import time
+import busio
 import digitalio
 from adafruit_bus_device.spi_device import SPIDevice
 
@@ -47,7 +48,7 @@ class st7036():
     self._cs_spi            = digitalio.DigitalInOut(cs_spi)
     self._cs_spi.direction  = digitalio.Direction.OUTPUT
 
-    spi = board.SPI()
+    spi = busio.SPI(board.SCLK,board.MOSI,board.MISO)
     self._spi = SPIDevice(spi,self._cs_spi)
 
     self._cs_register            = digitalio.DigitalInOut(cs_register)
