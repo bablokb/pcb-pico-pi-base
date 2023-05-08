@@ -1,3 +1,4 @@
 Comment,Designator,Footprint,LCSC
 D_Schottky,D1,D_SMA,C2480
 10K,"R1,R2",R_0603_1608Metric,C25804
+Micro_SD_TF_PUSH,J9,TF-Push,C393941
