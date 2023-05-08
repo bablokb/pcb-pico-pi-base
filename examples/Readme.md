@@ -1,8 +1,22 @@
 Examples
 ========
 
-Some example programs for various hats. Check the lib-directory for
+Some example programs for various hats. Check the `lib`-directory for
 necessary (CircuitPython) drivers.
+
+All the drivers assume that the mapping is done by the board-module.
+E.g. the driver usesf `board.GPIO24` and this is then mapped automatically
+to the correct `board.GPxx`.
+
+
+Blinkt!
+-------
+
+This is a row of 8 APA102-LEDs with a connector. Simple and easy for nice
+visual effects. It does not use I2C, but bit-banging with clock on GPIO24
+and data on GPIO23. Porting was easy, replacing RPi.GPIO with digitalio.
+
+![](blinkt.jpg)
 
 
 Scroll pHat HD
@@ -14,6 +28,8 @@ with the Scroll Hat Mini (<https://shop.pimoroni.com/products/scroll-hat-mini>).
 A hat with 11x7 (monochrome) LEDs. The example is from
 <http://github.com/adafruit/Adafruit_CircuitPython_IS31FL3731> and
 uses the driver from that repo.
+
+![](scroll-phat-hd.jpg)
 
 
 Touch pHat
@@ -30,13 +46,16 @@ Linux-version supplied by Pimoroni.
 
 A 4x14 segment display pHat <https://shop.pimoroni.com/products/four-letter-phat>.
 
+![](4letter_hat-led_shim.jpg)
+
 Works out of the box with <http://github.com/adafruit/Adafruit_CircuitPython_HT16K33>.
 
 
 LED-Shim
 --------
 
-Also from Pimoroni <https://shop.pimoroni.com/products/led-shim>.
+Also from Pimoroni <https://shop.pimoroni.com/products/led-shim>. You can see
+it above the 4-letter pHat in the image above.
 
 Same driver as the scroll pHat: <http://github.com/adafruit/Adafruit_CircuitPython_IS31FL3731>. The example is from that repo too.
 
