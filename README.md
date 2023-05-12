@@ -27,6 +27,7 @@ The following hats were successfully tested:
   - LED-Shim
   - Pirate-Audio Speaker-Hat (except audio)
   - Display-Otron-Hat
+  - InkyImpression  5.7"
 
 See the [examples page](examples/Readme.md) for details.
 

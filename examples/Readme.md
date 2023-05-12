@@ -81,3 +81,18 @@ The hat has a 3x16 character LCD with RGB backlight, six bar-graph
 LEDs and six touch-buttons.
 
 Fully supported, but the examples need some minor tweaks.
+
+
+InkyImpression 5.7"
+-------------------
+
+This 7-color e-ink display is from Pimoroni:
+<https://shop.pimoroni.com/products/inky-impression-5-7>
+
+It is the same display as used in the InkyFrame 5.7", which has a Pico-W
+attached. Main difference is that the latter also has a RTC and
+some sophisticated power-management circuit.
+
+The InkyImpression works out of the box with the SPD1656-driver from
+Adafruit <http://github.com/adafruit/Adafruit_CircuitPython_SPD1656>.
+
