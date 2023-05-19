@@ -25,6 +25,7 @@ The following hats were successfully tested:
   - Touch pHat
   - 4-Letter pHat
   - LED-Shim
+  - Button-Shim
   - Pirate-Audio Speaker-Hat (except audio)
   - Display-Otron-Hat
   - InkyImpression  5.7"
@@ -66,11 +67,18 @@ Pico-driver available for your hats or adapt existing Pi drivers to the Pico. Si
 many hats have python-drivers, this is not too difficult. Most hats only use
 I2C and/or SPI anyhow.
 
-*Work in progress:*
+In the directory `lib` you will find CircuitPython drivers for the supported
+hats, unless there is a ready to use driver available.
 
-  - special CircuitPython builds with pin-aliases mapping the GPIOs of the Pi to the Pico
-  - CircuitPython drivers for various hats
-  - examples
+The directory `examples` contains example programs.
+
+The software currently assumes that you use special CircuitPython-builds
+that do the pin mapping (see the directory `circuitpython`).
+If not, you have to manually look up the [mapping](mapping.ods).
+
+Porting to MicroPython from CircuitPython should be very simple, since
+CircuitPython is only a fork of MicroPython and all the drivers use only
+I2C, SPI and digital-IO.
 
 
 License

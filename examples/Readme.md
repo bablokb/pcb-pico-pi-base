@@ -60,6 +60,14 @@ it above the 4-letter pHat in the image above.
 Same driver as the scroll pHat: <http://github.com/adafruit/Adafruit_CircuitPython_IS31FL3731>. The example is from that repo too.
 
 
+Button-Shim
+-----------
+
+A small pcb with five buttons and a RGB-LED from Pimoroni:
+<https://shop.pimoroni.com/products/button-shim>.
+
+
+
 Pirate-Audio Speaker-Hat
 ------------------------
 
