@@ -26,7 +26,8 @@ The following hats were successfully tested:
   - 4-Letter pHat
   - LED-Shim
   - Button-Shim
-  - Pirate-Audio Speaker-Hat (except audio)
+  - Pirate-Audio Speaker-Hat
+  - Adafruit Speaker Bonnet
   - Display-Otron-Hat
   - InkyImpression  5.7"
 

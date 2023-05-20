@@ -80,6 +80,19 @@ Currently with Rev1-boards, only the display and the buttons are supported.
 Rev2-boards will also (hopefully) support audio.
 
 
+Adafruit Speaker-Bonnet
+-----------------------
+
+An audio hat with connectors for speakers, see
+<https://www.adafruit.com/product/3346>.
+
+This bonnet uses I2S and works without any additional libraries.
+The example is from the guide
+<https://learn.adafruit.com/adafruit-speaker-bonnet-for-raspberry-pi>. If you
+compare the many pages of install instructions necessary to get this
+working for a Pi you really love the simplicity of CircuitPython.
+
+
 Display-Otron-Hat
 -----------------
 
