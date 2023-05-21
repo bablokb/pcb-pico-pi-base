@@ -21,6 +21,13 @@ import digitalio
 import displayio
 from adafruit_display_text import label
 from adafruit_st7789 import ST7789
+import audiomp3
+import audiobusio
+
+# The hat uses pins GPIO18, GPIO19 and GPIO21
+
+audio = audiobusio.I2SOut(board.GPIO18, board.GPIO19, board.GPIO21)
+mp3 = audiomp3.MP3Decoder(open("slow.mp3", "rb"))
 
 # Release any resources currently in use for the displays
 displayio.release_displays()
@@ -81,8 +88,10 @@ splash.append(text_group)
 time.sleep(2)
 
 while True:
-  for btn,label in buttons:
-    if not btn.value:
-      print(f"button {label} pressed")
-      text_area.text = f"Button: {label}"
-      time.sleep(0.2)
+  audio.play(mp3)
+  while audio.playing:
+    for btn,label in buttons:
+      if not btn.value:
+        print(f"button {label} pressed")
+        text_area.text = f"Button: {label}"
+        time.sleep(0.1)

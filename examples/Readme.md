@@ -67,17 +67,28 @@ A small pcb with five buttons and a RGB-LED from Pimoroni:
 <https://shop.pimoroni.com/products/button-shim>.
 
 
-
 Pirate-Audio Speaker-Hat
 ------------------------
 
 A hat from Pimoroni with a 240x240 display, four buttons, an audio DAC and
-a small speaker (https://shop.pimoroni.com/products/pirate-audio-mini-speaker).
+a small speaker (<https://shop.pimoroni.com/products/pirate-audio-mini-speaker>).
 
 There are a few variants of this head available and all should work the same.
 
-Currently with Rev1-boards, only the display and the buttons are supported.
-Rev2-boards will also (hopefully) support audio.
+Rev1-boards only support the display and the buttons.
+Rev2-boards also support audio.
+
+All components are directly supported with standard CircuitPython drivers.
+
+
+Audio DAC Shim
+--------------
+
+A solderless (more or less) shim with a 3.5mm line-out from Pimoroni
+<https://shop.pimoroni.com/products/audio-dac-shim-line-out>.
+
+Needs a Rev2-board. Audio-support for I2S is built into CircuitPython,
+so no additional libs are necessary.
 
 
 Adafruit Speaker-Bonnet
