@@ -80,6 +80,12 @@ Rev2-boards also support audio.
 
 All components are directly supported with standard CircuitPython drivers.
 
+The hats have a major design flaw: they use the MISO-pin for the TFT-D/C,
+so you cannot use SPI-devices together with this hat, at least as long as
+you need MOSI. This really hurts, since this means you cannot read files
+from the SD-card. And it is absolutely unnessary to use this pin, since
+the Pi has so many other unused pins :-(
+
 
 Audio DAC Shim
 --------------
