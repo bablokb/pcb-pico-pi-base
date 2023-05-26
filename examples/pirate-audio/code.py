@@ -87,11 +87,10 @@ text_group.append(text_area)  # Subgroup for text scaling
 splash.append(text_group)
 time.sleep(2)
 
-while True:
-  audio.play(mp3)
-  while audio.playing:
-    for btn,label in buttons:
-      if not btn.value:
-        print(f"button {label} pressed")
-        text_area.text = f"Button: {label}"
-        time.sleep(0.1)
+audio.play(mp3,loop=True)
+while audio.playing:
+  for btn,label in buttons:
+    if not btn.value:
+      print(f"button {label} pressed")
+      text_area.text = f"Button: {label}"
+      time.sleep(0.1)
