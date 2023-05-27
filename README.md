@@ -11,9 +11,7 @@ and the "pico-pi-base":
 
 ![](pico-pi-base.jpg)
 
-
-Currently, the boards support (besides digital IO) I2C and SPI.
-Support for I2S (sound) will be available with the Rev2-boards.
+The boards support (besides digital IO) I2C, I2S and SPI.
 
 
 Supported Hats
