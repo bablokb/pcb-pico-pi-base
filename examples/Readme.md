@@ -134,3 +134,11 @@ some sophisticated power-management circuit.
 The InkyImpression works out of the box with the SPD1656-driver from
 Adafruit <http://github.com/adafruit/Adafruit_CircuitPython_SPD1656>.
 
+
+I2C-Multiplexer-pHat
+--------------------
+
+This 8-bus I2C-multiplexer pHat from independent maker 8086.net is based
+on the TCA9548A and works with the TCA9548A-driver library from Adafruit
+<https://github.com/adafruit/Adafruit_CircuitPython_TCA9548A>.
+
