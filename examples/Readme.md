@@ -110,6 +110,16 @@ compare the many pages of install instructions necessary to get this
 working for a Pi you really love the simplicity of CircuitPython.
 
 
+Adafruit LoRa-Bonnet
+--------------------
+
+A hat with a RFM9x-chip, three buttons and an I2C-OLED-display.
+<https://www.adafruit.com/product/4074>.
+
+The example is an adaption of the code in the guide
+<https://learn.adafruit.com/multi-device-lora-temperature-network>.
+
+
 Display-Otron-Hat
 -----------------
 
@@ -121,10 +131,10 @@ LEDs and six touch-buttons.
 Fully supported, but the examples need some minor tweaks.
 
 
-InkyImpression 5.7"
--------------------
+InkyImpression 4.0" and 5.7"
+----------------------------
 
-This 7-color e-ink display is from Pimoroni:
+These 7-color e-ink displays are from Pimoroni:
 <https://shop.pimoroni.com/products/inky-impression-5-7>
 
 It is the same display as used in the InkyFrame 5.7", which has a Pico-W
