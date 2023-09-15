@@ -74,6 +74,7 @@ RESET = DigitalInOut(board.GPIO25)
 spi = busio.SPI(board.SCLK, MOSI=board.MOSI, MISO=board.MISO)
 rfm9x = adafruit_rfm9x.RFM9x(spi, CS, RESET, RADIO_FREQ_MHZ)
 rfm9x.node = LORA_STATION_ID
+rfm9x.ack_delay = 0.1
 
 # --- update display   -------------------------------------------------------
 
@@ -104,8 +105,8 @@ update_display([WAIT_TEXT])
 while True:
   packet = None
 
-  # check for packet rx
-  packet = rfm9x.receive(with_ack=True)
+  # check for packet rx. Default timeout is 0.5
+  packet = rfm9x.receive(with_ack=True,timeout=1.0)
   if packet is None:
     continue
 
