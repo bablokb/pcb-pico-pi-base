@@ -59,12 +59,11 @@ i2c = board.I2C()
 display_bus = displayio.I2CDisplay(i2c,device_address=0x3c)
 display = SSD1306(display_bus,width=128,height=32)
 
-#bg = displayio.Bitmap(display.width,display.height,2)
-#bg.fill(0)
-#tile_grid = displayio.TileGrid(bg, pixel_shader=bg.pixel_shader)
 group = displayio.Group()
-#group.append(tile_grid)
-#display.root_group = group
+lbl = label.Label(FONT,text=HEADER_TEXT,color=0xFFFFFF,line_spacing=1.05,
+                    anchor_point=(0,0),x=0,y=4
+                    )
+group.append(lbl)
 display.show(group)
 
 # --- LoRa   -----------------------------------------------------------------
@@ -81,17 +80,10 @@ rfm9x.ack_delay = 0.1
 def update_display(lines=[]):
   """ update display """
 
-  if len(group) == 1:
-    group.pop()
-
   txt = f"{HEADER_TEXT}\n{lines[0]}"
   if len(lines) > 1:
     txt = f"{txt}\n{lines[1]}: {lines[2]}"
-  lbl = label.Label(FONT,text=txt,color=0xFFFFFF,line_spacing=1.05,
-                    anchor_point=(0,0),x=0,y=4
-                    )
-  group.append(lbl)
-  display.show(group)
+  lbl.text = txt
 
 # --- process data   ---------------------------------------------------------
 
