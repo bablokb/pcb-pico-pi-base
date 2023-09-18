@@ -101,6 +101,8 @@ while True:
   packet = rfm9x.receive(with_ack=True,timeout=1.0)
   if packet is None:
     continue
+  snr  = rfm9x.last_snr
+  rssi = rfm9x.last_rssi
 
   # Decode packet: assume it is csv with a timestamp as first field
   try:
@@ -109,7 +111,7 @@ while True:
     values = data.split(',')         # expect csv
     ts = values[0].split('T')[1]     # removes date from timestamp
     # Display packet information
-    update_display([ts,values[1],values[2]])
+    update_display([f"{ts} ({snr}/{rssi})",values[1],values[2]])
   except:
     update_display([ERROR_TEXT])
   time.sleep(INTERVAL)
