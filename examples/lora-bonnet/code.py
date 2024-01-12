@@ -74,6 +74,7 @@ spi = busio.SPI(board.SCLK, MOSI=board.MOSI, MISO=board.MISO)
 rfm9x = adafruit_rfm9x.RFM9x(spi, CS, RESET, RADIO_FREQ_MHZ)
 rfm9x.node = LORA_STATION_ID
 rfm9x.ack_delay = 0.1
+rfm9x.tx_power = 23
 
 # --- update display   -------------------------------------------------------
 
