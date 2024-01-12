@@ -29,6 +29,7 @@ The following hats were successfully tested:
   - Adafruit Speaker Bonnet
   - Display-Otron-Hat
   - InkyImpression  5.7"
+  - Inky wHAT (black and white version)
 
 See the [examples page](examples/Readme.md) for details.
 

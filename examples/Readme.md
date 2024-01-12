@@ -144,6 +144,16 @@ some sophisticated power-management circuit.
 The InkyImpression works out of the box with the SPD1656-driver from
 Adafruit <http://github.com/adafruit/Adafruit_CircuitPython_SPD1656>.
 
+Inky wHAT
+---------
+
+This is a 400x300 b&w e-ink display from Pimoroni (versions with an
+additional color are also available, but are untested):
+<https://shop.pimoroni.com/products/inky-what>
+
+The driver is in `lib/what.py` and is a port of the (Linux-) Python-driver
+from Pimoroni.
+
 
 I2C-Multiplexer-pHat
 --------------------
