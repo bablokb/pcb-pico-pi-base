@@ -41,9 +41,8 @@ KiCad design-files are in `pico-zero-base.kicad` and in `pico-pi-base.kicad`
 respectively. Ready to upload production files for JLCPCB are in `production_files`.
 
 Except for I2C-pullups (and VSYS-diode on pico-pi-base) the adapter-boards
-only map the pins of the Pico to pins of the Pi. The current version only
-supports I2C, SPI0 and SPI1. I2S will be supported by the next version of
-pico-pi-base.
+only map the pins of the Pico to pins of the Pi. The current versions
+support I2C, SPI0, SPI1, I2S.
 
 Schematic, layout and 3D-rendered images for pico-zero-base:
 
