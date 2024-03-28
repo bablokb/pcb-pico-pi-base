@@ -1,4 +1,4 @@
-#define MICROPY_HW_BOARD_NAME "Pico Zero Base W Rev1"
+#define MICROPY_HW_BOARD_NAME "PicoW Zero Base Rev1"
 #define MICROPY_HW_MCU_NAME "rp2040"
 
 #define CIRCUITPY_DIGITALIO_HAVE_INVALID_PULL (1)

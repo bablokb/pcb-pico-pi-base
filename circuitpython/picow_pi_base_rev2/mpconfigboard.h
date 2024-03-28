@@ -1,4 +1,4 @@
-#define MICROPY_HW_BOARD_NAME "Pico Pi Base W Rev2"
+#define MICROPY_HW_BOARD_NAME "PicoW Pi Base Rev2"
 #define MICROPY_HW_MCU_NAME "rp2040"
 
 #define CIRCUITPY_DIGITALIO_HAVE_INVALID_PULL (1)
