@@ -30,6 +30,8 @@ The following hats were successfully tested:
   - Display-Otron-Hat
   - InkyImpression  5.7"
   - Inky wHAT (black and white version)
+  - Waveshare 4 inch RPi LCD (A)
+  - I2C-Multiplexer-pHat
 
 See the [examples page](examples/Readme.md) for details.
 

@@ -155,6 +155,17 @@ The driver is in `lib/what.py` and is a port of the (Linux-) Python-driver
 from Pimoroni.
 
 
+Waveshare 4-inch RPi LCD (A)
+----------------------------
+
+This is a 480x320 LCD-display with a 26-pin connector. It uses
+the ILI4986-chip together with an XPT2046 for touch:
+<https://www.waveshare.com/wiki/4inch_RPi_LCD_(A)>.
+
+The display-driver needs a special hacked version of CircuitPython, the
+patch is included in the directory `lib/ili9486_waveshare_4in`.
+
+
 I2C-Multiplexer-pHat
 --------------------
 
