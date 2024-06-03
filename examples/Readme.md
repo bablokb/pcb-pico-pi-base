@@ -5,8 +5,11 @@ Some example programs for various hats. Check the `lib`-directory for
 necessary (CircuitPython) drivers.
 
 All the drivers assume that the mapping is done by the board-module.
-E.g. the driver usesf `board.GPIO24` and this is then mapped automatically
+E.g. the driver uses `board.GPIO24` and this is then mapped automatically
 to the correct `board.GPxx`.
+
+Some more examples are available here (for similar boards):
+<https://github.com/dglaude/circuitpython_phat_on_pico>
 
 
 Blinkt!
@@ -143,6 +146,7 @@ some sophisticated power-management circuit.
 
 The InkyImpression works out of the box with the SPD1656-driver from
 Adafruit <http://github.com/adafruit/Adafruit_CircuitPython_SPD1656>.
+
 
 Inky wHAT
 ---------
