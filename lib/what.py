@@ -10,7 +10,7 @@
 # This is a port of the what-driver from: https://github.com/pimoroni/inky
 # The original MIT-License is Copyright (c) 2018 Pimoroni Ltd.
 #
-# Website: https://github.com/bablokb/circuitpython-examples
+# Website: https://github.com/bablokb/pcb-pico-pi-base
 #
 # -------------------------------------------------------------------------
 
@@ -98,24 +98,10 @@ _STOP_SEQUENCE = (
 )
 
 class Inky_wHat(displayio.EPaperDisplay):
-  r"""Inky_wHat driver
-
-  :param bus: The data bus the display is on
-  :param \**kwargs:
-    See below
-
-    :Keyword Arguments:
-      * *width* (``int``) --
-      Display width
-      * *height* (``int``) --
-      Display height
-      * *rotation* (``int``) --
-          Display rotation
-  """
+  """ Inky_wHat driver """
 
   def __init__(self, bus: displayio.FourWire,
                color='black', border_color='black',
-               black_bits_inverted=False,
                **kwargs) -> None:
 
     if color not in ('red', 'black', 'yellow'):
@@ -161,6 +147,5 @@ class Inky_wHat(displayio.EPaperDisplay):
       write_color_ram_command=0x26,
       refresh_display_command=_REFRESH_SEQUENCE,
       seconds_per_frame=2,
-      black_bits_inverted=black_bits_inverted,
       refresh_time=2.0,
     )
