@@ -41,9 +41,8 @@ display_bus = displayio.FourWire(
 display_bus.reset()
 
 print("creating display")
-display = Inky_pHat(
-  display_bus, width=250, height=122, busy_pin=BUSY_PIN, rotation=90,
-  #border_color='white'
+display = Inky_pHat(display_bus, busy_pin=BUSY_PIN, rotation=90,
+                    border_color='white'
 )
 
 print("creating root-group")

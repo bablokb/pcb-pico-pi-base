@@ -19,7 +19,7 @@ import displayio
 
 _START_SEQUENCE = (
   b"\x12\x00"  # Software reset
-  b"\x01\x03\x00\x00\x00"  # driver output control
+  b"\x01\x03\xf9\x00\x00"  # driver output control
   b"\x3a\x01\x1b"  # Set dummy line period
   b"\x3b\x01\x0b"  # Set gate line width
   b"\x11\x01\x03"  # Data entry sequence
@@ -39,10 +39,6 @@ class Inky_pHat(displayio.EPaperDisplay):
                color='black', border_color='black',
                **kwargs) -> None:
     start_sequence = bytearray(_START_SEQUENCE)
-    width = kwargs["width"]
-    start_sequence[4] = (width - 1) & 0xFF
-    start_sequence[5] = (width - 1) >> 8
-
     if border_color == 'red':
       start_sequence[-1] = 0x06
     elif border_color == 'yellow':
@@ -55,6 +51,8 @@ class Inky_pHat(displayio.EPaperDisplay):
       start_sequence,
       _STOP_SEQUENCE,
       **kwargs,
+      width=250,
+      height=122,
       ram_width=240,
       ram_height=320,
       colstart=12,
