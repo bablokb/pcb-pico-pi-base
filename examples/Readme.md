@@ -159,6 +159,18 @@ The driver is in `lib/what.py` and is a port of the (Linux-) Python-driver
 from Pimoroni.
 
 
+Inky pHAT
+---------
+
+This is a 250x122 b&w e-ink display from Pimoroni (versions with an
+additional color are also available, but are untested):
+<https://shop.pimoroni.com/products/inky-phat>
+
+The driver is in `lib/phat.py` and is an adaption of the 
+<https://github.com/adafruit/Adafruit_CircuitPython_SSD1608> driver
+with input from the (Linux-) Python-driver of Pimoroni.
+
+
 Waveshare 4-inch RPi LCD (A)
 ----------------------------
 
