@@ -62,4 +62,5 @@ class Inky_pHat(displayio.EPaperDisplay):
       set_current_row_command=0x4F,
       write_black_ram_command=0x24,
       refresh_display_command=0x20,
+      seconds_per_frame=6,
       )
